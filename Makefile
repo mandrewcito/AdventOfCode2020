@@ -1,2 +1,2 @@
 run:
-	venv/bin/python day$(DAY)/solve.py
+	venv/bin/python3.9 day$(DAY)/solve.py
