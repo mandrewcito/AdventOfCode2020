@@ -21,16 +21,9 @@ class Group(object):
     def answered_yes(self):
         return len(self.get_unique_responses())
     
-    def answered_no(self):
-        return 26 - self.answered_yes()
-
 @dataclass
 class Person(object):
     response: str
-
-@dataclass
-class Plane(object):
-    groups: list
 
 def get_lines(file_path):
     with open(file_path) as fh:
