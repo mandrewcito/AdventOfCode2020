@@ -143,4 +143,4 @@ any([False, False, False])
 # output False
 ```
 
-[any](https://docs.python.org/3/library/functions.html#any)
+* [any](https://docs.python.org/3/library/functions.html#any)
