@@ -144,3 +144,11 @@ any([False, False, False])
 ```
 
 * [any](https://docs.python.org/3/library/functions.html#any)
+
+### Once ended ...
+
+All the code, including this post is published in [my github](https://github.com/mandrewcito/AdventOfCode2020)
+
+As a personal recommendation i encourage anybody to participate. I think that this kind of events improve your skills as a developer, and for me was a good way to remember some things that i used to do on my degree but i don't do on day a day work. So this was funny.
+
+Did you participate in AoC2020 or something similar?, feel free to leave any thought below :)
