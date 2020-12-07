@@ -129,3 +129,18 @@ all([True, True, True])
 ```
 
 * [all](https://docs.python.org/3/library/functions.html#all)
+
+#### [Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)
+On the seventh day, i made i mistake, not model problem as a graph initially(with python you can use dict simply) and work with a list. i wasted a lot of time :(. As new funciton of the day added 'any' function.
+
+This function can be used as it follows:
+
+```python
+any([True, False, False])
+# output: True
+
+any([False, False, False])
+# output False
+```
+
+[any](https://docs.python.org/3/library/functions.html#any)
