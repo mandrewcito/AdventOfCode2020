@@ -145,6 +145,29 @@ any([False, False, False])
 
 * [any](https://docs.python.org/3/library/functions.html#any)
 
+#### [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)
+Day 8, only a path finding was neccesary as new used language features i used 'copy' and 're.findall'.
+
+```python
+import copy
+sample = [1,3,4,5]
+sample_copy = copy.deepcopy(sample)
+sample[3] = 99
+sample
+# output: [1, 3, 4, 99]
+sample_copy
+# output: [1, 3, 4, 5]
+```
+
+```python
+import re
+re.findall(r"(\w+) ([+-]\d+)", "nop -1")
+# output: [('nop', '-1')]
+```
+
+* [path finding](https://en.wikipedia.org/wiki/Pathfinding)
+* [copy](https://docs.python.org/3/library/copy.html)
+* [regex](https://docs.python.org/3/library/re.html)
 ### Once ended ...
 
 All the code, including this post is published in [my github](https://github.com/mandrewcito/AdventOfCode2020)
