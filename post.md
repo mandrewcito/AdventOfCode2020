@@ -168,6 +168,31 @@ re.findall(r"(\w+) ([+-]\d+)", "nop -1")
 * [path finding](https://en.wikipedia.org/wiki/Pathfinding)
 * [copy](https://docs.python.org/3/library/copy.html)
 * [regex](https://docs.python.org/3/library/re.html)
+
+#### [Day 9: Encoding Error](https://adventofcode.com/2020/day/9)
+
+This day for me was quite easier than the previous day, i didn't nothing special. 'New' language features that i used was 'min', 'max' and a 'shuffle' for testing.
+
+```python
+min([2222, 1, 1, 1, 0])
+# output: 0
+
+max([2222, 1, 1, 1, 0])
+# output: 2222
+```
+
+```python
+import random
+sample = list(range(1, 26))
+random.shuffle(sample)
+sample
+# output: [24, 6, 17, 14, 13, 25, 18, 19, 12, 1, 11, 7, 22, 9, 20, 3, 16, 15, 21, 8, 2, 23, 10, 4, 5]
+```
+
+* [max](https://docs.python.org/3/library/functions.html#max)
+* [min](https://docs.python.org/3/library/functions.html#min)
+* [random](https://docs.python.org/3/library/random.html)
+
 ### Once ended ...
 
 All the code, including this post is published in [my github](https://github.com/mandrewcito/AdventOfCode2020)
