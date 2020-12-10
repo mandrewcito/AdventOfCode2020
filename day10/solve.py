@@ -73,13 +73,10 @@ def get_jolts_paths(adapters):
     Returns:
         int: number of paths can be explored
     """
-    print(list(map(lambda x: x.output_joltage, adapters)))
     data = collections.defaultdict(int)
     data[0] = 1
     for adapter in adapters: 
-        print(f"{adapter.output_joltage} => {data[adapter.output_joltage-1]} + {data[adapter.output_joltage-2]} + {data[adapter.output_joltage-3]}")
         data[adapter.output_joltage] = data[adapter.output_joltage-1] + data[adapter.output_joltage-2] + data[adapter.output_joltage-3] 
-    print(data)
     return data[adapters[-1].output_joltage]
 
 def get_different_paths(adapters):
