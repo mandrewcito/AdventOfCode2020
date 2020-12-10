@@ -1,15 +1,15 @@
 ---
-title: Advent of code 2020: A retrospective
+title: Advent of code 2020 (1-10): Starting
 published: false
 description: A couple of things about my AoC2020 implementations
 tags: AdventOfCode, python
+series: AoC2020
 cover_image: https://www.hindustantimes.com/rf/image_size_444x250/HT/p2/2020/01/13/Pictures/_67acd868-35de-11ea-bb16-55584621af3a.jpg
 ---
 
 This year, encouraged by @fynardo i decided to participate in AoC 2020. Current post will be a retrospective about my AoC implementations language specific and non language specific. I will write about algorithms, patterns and data structures that was usefull during this month.
 
 During this month?. Yes, AoC is an advent calendar so there will be a few of implementations here.
-
 
 ####  [Day 1: Report Repair](https://adventofcode.com/2020/day/1)
 
@@ -146,6 +146,7 @@ any([False, False, False])
 * [any](https://docs.python.org/3/library/functions.html#any)
 
 #### [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)
+
 Day 8, only a path finding was neccesary as new used language features i used 'copy' and 're.findall'.
 
 ```python
@@ -227,10 +228,4 @@ With previous code we 'store' with voltage index how many paths, take to that no
 * [dynamic programing](https://en.wikipedia.org/wiki/Dynamic_programming)
 * [tail recursion](https://en.wikipedia.org/wiki/Tail_call)
 
-### Once ended ...
-
-All the code, including this post is published in [my github](https://github.com/mandrewcito/AdventOfCode2020)
-
-As a personal recommendation i encourage anybody to participate. I think that this kind of events improve your skills as a developer, and for me was a good way to remember some things that i used to do on my degree but i don't do on day a day work. So this was funny.
-
-Did you participate in AoC2020 or something similar?, feel free to leave any thought below :)
+I decided to split post on a series, this way posts will be shorter. Are you participating on AoC?. What do you think about the problems? Do you think that are tricky or easy problems?
