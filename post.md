@@ -193,6 +193,40 @@ sample
 * [min](https://docs.python.org/3/library/functions.html#min)
 * [random](https://docs.python.org/3/library/random.html)
 
+#### [Day 10: Adapter Array](https://adventofcode.com/2020/day/10)
+
+First problem´s part was quite simple but, on second part, i made a recursive function and it took a long time executing. Then i thought: Obviously, thats not the right choice. The result will be a stack overflow if number of choices is big. So here i had two choices:
+* First approach: Refactor code as a tail recursion code.
+* Second approach: model problem as a dinamic programing problem.
+
+```python
+ def get_paths(adapters, current):
+    filtered = list(filter(lambda adapter: 0 <= adapter.diff(current) <= 3, adapters))
+    values = list(map(lambda x: adapters[adapters.index(x):], filtered))
+    return values
+
+def explore_paths(adapters):
+    if adapters == []:
+        return 1
+    adapter = adapters[0]   
+    sublists = get_paths(adapters[2:], adapter)
+    return explore_paths(adapters[1:]) +\
+         sum([explore_paths(sublist_adapters) for sublist_adapters in sublists])
+```
+
+```python
+def get_jolts_paths(adapters):
+    data = collections.defaultdict(int)
+    data[0] = 1
+    for adapter in adapters: 
+        data[adapter.output_joltage] = data[adapter.output_joltage-1] + data[adapter.output_joltage-2] + data[adapter.output_joltage-3] 
+    return data[adapters[-1].output_joltage]
+```
+With previous code we 'store' with voltage index how many paths, take to that node. 
+
+* [dynamic programing](https://en.wikipedia.org/wiki/Dynamic_programming)
+* [tail recursion](https://en.wikipedia.org/wiki/Tail_call)
+
 ### Once ended ...
 
 All the code, including this post is published in [my github](https://github.com/mandrewcito/AdventOfCode2020)
