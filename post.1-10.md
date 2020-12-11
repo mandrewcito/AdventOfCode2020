@@ -229,3 +229,5 @@ With previous code we 'store' with voltage index how many paths, take to that no
 * [tail recursion](https://en.wikipedia.org/wiki/Tail_call)
 
 I decided to split post on a series, this way posts will be shorter. Are you participating on AoC?. What do you think about the problems? Do you think that are tricky or easy problems?
+
+If you want check/comment my implementations you can find it on my [github](https://github.com/mandrewcito/AdventOfCode2020)
