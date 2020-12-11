@@ -9,6 +9,6 @@ cover_image: https://www.hindustantimes.com/rf/image_size_444x250/HT/p2/2020/01/
 
 [Day 11: Seating System](https://adventofcode.com/2020/day/11)
 
-Problem wasn´t hard, but i think that this was too long (at least for me). This problem remembered me to a practice on my computer science degree. It was a flooding algorithm and i solve it in a similar way.
+Problem wasn´t hard, but i think that this was too long (at least for me). This problem remembered me to a practice on my computer science degree. It was a flooding algorithm and i solve day 11´s problem  in a similar way.
 
 * [flooding algorithms](https://en.wikipedia.org/wiki/Flood_fill)
